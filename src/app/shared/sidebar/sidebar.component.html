@@ -1,0 +1,20 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">
+      Gifs-App
+    </h3>
+    <hr class="text-white"/>
+    <div class="list-group list-reset">
+      <a *ngFor="let item of historial"
+          (click)="buscar(item)"
+          href="#"
+          class="list-group-item list-group-item-action">
+        <!-- este pipe de titlecase hace que
+        cada palabra recibida desde las busquedas, cambie la
+        primera letra en mayusculas. los pipes solo manipulan
+        y tranforman de forma visual en el template
+        no hace modificaciones a la data-->
+
+        {{item | titlecase}}
+      </a>
+    </div>
+</div>
