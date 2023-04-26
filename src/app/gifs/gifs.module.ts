@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { GifsPageComponent } from './gifs-page/gifs-page.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { FootherComponent } from '../shared/foother/foother.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -10,14 +12,17 @@ import { ResultadosComponent } from './resultados/resultados.component';
   declarations: [
     GifsPageComponent,
     BusquedaComponent,
-    ResultadosComponent
+    ResultadosComponent,
+  
   ],
   exports:[
     GifsPageComponent,
    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
+    
   ]
 })
 export class GifsModule { }

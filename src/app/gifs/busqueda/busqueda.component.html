@@ -1,9 +1,11 @@
-<h5>Buscar:</h5>
-<input 
-    type="text" 
-    class="form-control" 
-    placeholder="Buscar gifs..."
-    (keyup.enter)="buscar()"
-    #txtBuscar    
->
+<div class="input-group mb-3">
+    <input type="text" class="form-control bg-dark text-orange" placeholder="Buscar gifs..." aria-label="Buscar gifs"
+      aria-describedby="button-addon2" (keyup.enter)="buscar()" #txtBuscar>
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" id="button-addon2" (click)="buscar()">Buscar</button>
+    </div>
+  </div>
+  
+  
+  
 <!--me puedo crear una referencoa local que es #txtBuscar y mando el valor-->
